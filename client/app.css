@@ -1,0 +1,348 @@
+/* /* @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.switch-field {
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #6dd5ed;
+	box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+.form {
+	max-width: 270px;
+	font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+	font-weight: normal;
+	line-height: 1.625;
+	margin: 8px auto;
+	padding-left: 16px;
+	z-index: 2;
+}
+
+h2 {
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+.area{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 76%;
+  border: 0;
+  margin: 0 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.location{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 76%;
+  border: 0;
+  margin: 0 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.submit {
+    width: 76%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    box-shadow: 0 4px 10px rgba(33, 147, 176, 0.3);
+    cursor: pointer;
+    margin: 25px 0 10px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .submit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-25deg);
+    transition: 0.5s;
+  }
+  
+  .submit:hover::before {
+    left: 125%;
+  }
+  
+  .submit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(33, 147, 176, 0.4);
+  }
+  
+  .submit:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 6px rgba(33, 147, 176, 0.2);
+  }
+  
+/* .submit{
+  background: #a5dc86;
+  
+  width: 76%;
+  border: 0;
+  margin: 25px 0 10px;
+  box-sizing: border-box;
+  opacity: 0.7;
+  font-size: 15px;
+	height: 35px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.submit:hover{
+    opacity: 1;
+} */
+
+/* button, .location {
+    cursor: pointer;
+  }
+
+
+.result{
+		background: #6dd5ed;
+		width: 76%;
+		border: 0;
+		margin: 25px 0 10px;
+		box-sizing: border-box;
+		font-size: 15px;
+		height: 35px;
+		text-align: center;
+        border-radius: 0.5rem;
+}
+
+.img {
+  background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+	background-repeat: no-repeat;
+  background-size: auto;
+  background-size:100% 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(15px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body, html {
+  height: 100%;
+}   */
+
+/* chat */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 🌅 Background gradient and blur */
+.background {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.background::after {
+  content: "";
+  background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  opacity: 0.25;
+  filter: blur(6px);
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/* 🌟 Main Container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 35px;
+  width: 340px;
+  margin: 50px auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  color: white;
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+/* ✨ Title and subtitle */
+.title {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #f0f0f0;
+}
+
+/* 🧩 Input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* 🔘 Radio field styling */
+.switch-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.switch-field input {
+  display: none;
+}
+
+.switch-field label {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  margin: 0 4px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background: #6dd5ed;
+  color: #000;
+  font-weight: 600;
+}
+
+/* 💥 Button styling */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  background: linear-gradient(90deg, #6dd5ed, #2193b0);
+}
+
+/* 📊 Result box */
+.result-box {
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  min-height: 40px;
+}
+
+/* 🔄 Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.container {
+  max-height: 95vh;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}

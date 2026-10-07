@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "\"python.analysis.extraPaths\": [     \"/opt/miniconda3/envs/myenv/lib/python3.12/site-packages\" ]"
+    ]
+}
